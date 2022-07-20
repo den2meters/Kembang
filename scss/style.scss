@@ -1,0 +1,575 @@
+@import "_nullstyle";
+
+/*----------Fonts---------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+/*----------Container---------*/
+body {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 10px;
+   line-height: 16px;
+   min-width: 1168px;
+}
+.wrapper{
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+.container {
+   max-width: 1168px;
+   margin: 0px auto;
+   padding: 0px 15px;
+   box-sizing: content-box;
+   position: relative;
+
+}
+.ibj {
+   position: relative;
+}
+.ibj img{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+}
+
+/*----------Page---------*/
+.page {
+   height: 100%;
+   flex: 1 1 auto;
+}
+.page__plantname {}
+.page__services {}
+.page__featuredplants {}
+.page__buymore {}
+.page__visitshop {}
+.page__footer {}
+/*----------Header---------*/
+
+.header {
+   position: absolute;
+   width: 100%;
+   top: 0;
+   left: 0;
+   z-index: 50;
+}
+.header__container {
+   display: flex;
+   min-height: 116px;
+   align-items: center;
+}
+.header__logo {
+   flex: 1 1 auto;
+   justify-content: center;
+   padding: 20px 14px;
+   font-family: 'Nunito';
+   font-weight: 900;
+   font-size: 12px;
+   line-height: 133.333%;
+   color: #fff;
+   background: url('../img/Header/Polygon\ 1.svg') 0 center/ 36px 36px no-repeat;
+}
+.header__menu {
+   width: 310px;
+   flex: 0 0 auto;
+   justify-content: flex-end;
+}
+.menu {
+   display: flex;
+}
+.menu__buttons {
+   display: flex;
+}
+.menu__button {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding: 8px 20px;
+   font-family: 'Nunito';
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 143%;
+   color: #156963;
+}
+.menu__button:hover {
+   color: #ffffff;
+   background-color: #156963;
+   border-radius: 2px;
+   box-shadow: 0px 0px 5px #156963;
+}
+.menu__icons {
+   display: flex;
+   justify-content: space-between;
+   width: 80px;
+   margin: 8px;
+}
+.menu__icon {
+   
+}
+
+/*----------Plant Name---------*/
+
+
+.plantname{
+   position: relative;
+}
+
+.plantname__container {}
+
+.plantname__body {
+   display: flex;
+   flex-direction: column;
+   align-items: end;
+   padding: 0px 16px 0px 77px;
+   margin: 0px 0px 142px 0px
+}
+.plantname__main-text {
+   width: 50%;
+}
+.plantname__title {
+   margin: 186px 0px 0px 0px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 68px;
+   line-height: 122%;
+   color: #156963;
+}
+.plantname__text {
+   margin: 24px 0px 0px 0px;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 177%;
+   color: #2C1500;
+   opacity: 0.8;
+}
+.plantname__buttons {
+   margin: 110px -50px 0px 0px;
+   display: flex;
+   height: 160px;
+}
+.plantname__button {
+   
+}
+.plantname__button-next {
+   background: #156963;;
+}
+.button {
+   height: 160px;
+   width: 320px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 39px 46px;
+}
+.button__arrow {
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 121%;
+   background: url('../img/plantname/arrow-next.svg') 0 0 no-repeat;
+   color: #333333;
+   opacity: 0.5;
+}
+.button__arrow-previous{
+   padding: 0px 0px 0px 25px;
+   background: url('../img/plantname/arrow-previous.svg') 0 4.5px no-repeat;
+}
+.button__arrow-next {
+   background: url('../img/plantname/arrow-next-hover.svg') 65px 4.5px no-repeat;
+   color: #F2F2F2;
+}
+.button__text {
+   font-weight: 500;
+   font-size: 32px;
+   line-height: 122%;
+   color: #156963;
+}
+.button__text-next {
+   color: #fff;
+}
+.plantname__image {
+   position: absolute;
+   width: 50%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   z-index: 10;
+}
+.plantname__image img {
+   object-position: center;
+}
+
+/*----------Services---------*/
+.services {
+}
+.services__container {
+}
+.services__body {
+   margin: 0px 0px 84px 0px
+}
+.services__column {
+   display: flex;
+   padding: 0px 0px;
+   //justify-content: space-between;
+}
+.services__item {
+   flex: 0 1 25%;
+   border: 1px solid #E0E0E0;
+   padding: 22px 16px 0px 16px;
+}
+.services__item:not(:last-child) {
+   margin: 0px 32px 0px 0px;
+}
+.services__item:hover {
+   transform: scale(1.05);
+   box-shadow: 0px 0px 10px #3333337e;
+}
+.item-service {
+   display: flex;
+   flex-direction: column;
+}
+.item-service__header {
+   display: flex;
+   margin: 0px 0px 16px 0px
+
+}
+.item-service__icon {
+   margin: 0px 16px 0px 0px;
+}
+.item-service__title {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 150%;
+   color: #156963;
+   display: flex;
+   justify-content: start;
+   align-self: center;
+
+}
+.item-service__text {
+   margin: 0px 0px 21px 0px
+}
+
+/*---------Featured Plants---------*/
+.featuredplants {
+}
+.featuredplants__container {
+}
+.featuredplants__body {
+   margin: 0px 0px 80px 0px;
+   display: flex;
+   flex-direction: column;
+}
+.featuredplants__head-list {
+   display: flex;
+   justify-content: space-between;
+}
+.head-list {
+   margin: 0px 0px 15px 0px
+}
+.head-list__title {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 120%;
+   color: #000000;
+}
+.head-list__list {
+   height: 31px;
+   width: 130px;
+   font-weight: 500;
+   font-size: 12px;
+   color: #000000;
+   border: 1px solid #E0E0E0;
+   display: flex;
+   justify-content: center;
+}
+.featuredplants__plants {
+   display: flex;
+   padding: 24px 0px 0px 0px;
+   border-top: 1px solid #E0E0E0;
+   justify-content: space-between;
+}
+.featuredplants__plants-item {
+   margin: 0px 20px 0px 0px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.featuredplants__plants-item:last-child {
+   margin: 0px 0px 0px 0px;
+}
+.plant {
+}
+.plant__image {
+   margin: 0px 0px 16px 0px;
+}
+.plant__image img{
+   width: 100%;
+   height: 100%;
+}
+.plant__name {
+   margin: 0px 0px 8px 0px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 125%;
+   color: #000000;
+}
+.plant__price {
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 125%;
+   color: #000000;
+}
+
+/*------Relaxed------*/
+
+.buymore {}
+
+.buymore__container {}
+
+.buymore__body {
+   margin: 0px -42px 80px -42px;
+   display: flex;
+}
+
+.buymore__info {
+   flex: 1 1 50%;
+   padding: 0px 42px;
+   display: flex;
+   flex-direction: column;
+}
+
+.info {}
+
+.info__facts {
+   display: flex;
+   flex-direction: column;
+   flex: 1 0 auto;
+}
+
+.info__title {
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 140%;
+   color: #2C1500;
+}
+
+.info__text {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 175%;
+   color: #2C1500;
+}
+
+.info__image img{
+   height: 100%;
+   width: 100%;
+}
+
+.buymore__cover {
+   padding: 0px 42px;
+}
+.buymore__cover img{
+   flex: 1 1 50%;
+   height: 100%;
+   width: 100%;
+}
+
+/*------Visit-Shop----------*/
+
+.visitshop {}
+
+.visitshop__container {}
+
+.visitshop__body {
+   margin: 0px 0px 80px 0px;
+   display: flex;
+   background: #F3F4F6;
+   padding: 5px 41px 5px 97px;
+}
+
+.visitshop__main {
+   flex: 1 1 60%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.main {}
+
+.main__title {
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 140%;
+   color: #2C1500;
+}
+
+.main__button button{
+   font-family: 'Nunito';
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 142%;
+   color: #FAFEFE;
+   background: #156963;
+   height: 40px;
+   width: 152px;
+}
+
+.visitshop__image {
+   flex: 1 1 40%;
+}
+.visitshop__image img{
+   height: 100%;
+   width: 100%;
+}
+
+/*------Footer------*/
+
+.page__footer {}
+
+.footer {}
+
+.footer__container {
+   width: 945px;
+}
+
+.footer__body {
+   display: flex;
+   margin: 0px -40px 71px -40px;
+}
+
+.body-footer {}
+
+.body-footer__column {
+   padding: 0px 40px 0px 40px;
+}
+
+.body-footer__adress {
+   width: 282px;
+}
+
+.body-footer__title {
+   font-family: 'Poppins';
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 100%;
+   letter-spacing: 0.05em;
+   text-transform: uppercase;
+   color: #156963;
+   margin: 0px 0px 24px 0px;
+}
+
+.body-footer__info {}
+
+.info {}
+
+.info__sub-title {
+   font-family: 'Work Sans';
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 119%;
+   color: #333333;
+   margin: 0px 0px 10px 0px;
+}
+
+.info__text {
+   font-family: 'Work Sans';
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 154%;
+   color: #4F4F4F;
+}
+
+.body-footer__names {}
+
+.name {}
+
+.name__title {
+   font-family: 'Work Sans';
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 100%;
+   color: #000000;
+   margin: 0px 0px 20px 0px;
+}
+
+.name__names {}
+
+.name__link {
+   font-family: 'Work Sans';
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 130%;
+   color: #000000;
+}
+.name__link:not(:last-child) {
+   margin: 0px 0px 14px 0px;
+}
+.body-footer__products {}
+
+.product {}
+
+.product__title {
+   font-family: 'Work Sans';
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 100%;
+   color: #000000;
+      margin: 0px 0px 20px 0px;
+}
+
+.product__names {}
+
+.product__link {
+   font-family: 'Work Sans';
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 130%;
+   color: #000000;
+}
+.product__link:not(:last-child) {
+   margin: 0px 0px 14px 0px;
+}
+
+.body-footer__email {}
+
+.email {}
+
+.email__title {
+   font-family: 'Work Sans';
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 100%;
+   color: #000000;
+   margin: 0px 0px 14px 0px;
+}
+
+.email__input {}
+
+.email__place {
+   border: 1px solid #E0E0E0;
+   margin: 0px 0px 14px 0px;
+}
+
+.email__button button{
+   height: 22px;
+   width: 51px;
+   background: #156963;
+   font-family: 'Raleway';
+   font-weight: 500;
+   font-size: 8px;
+   line-height: 175%;
+   text-align: center;
+   text-transform: capitalize;
+   color: #FFFFFF;
+}
